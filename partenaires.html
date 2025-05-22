@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notre Partenaire - Human Impact</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html">Human Impact</a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="actions.html">Actions</a></li>
+            <li><a href="partenaires.html" class="active">Partenaires</a></li>
+            <li><a href="temoignages.html">Témoignages</a></li>
+            <li><a href="galerie.html">Galerie</a></li>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <!-- Bannière -->
+        <section class="partner-banner">
+            <div class="banner-image" style="background-image: url('/Users/amadoudiallo/Desktop/projet_humanitaire/equipe_associ_kiminou.jpeg');">
+                <div class="banner-content">
+                    <h1>Notre partenaire engagé : Kiminou</h1>
+                    <p class="banner-slogan">Ensemble pour l'éducation et l'avenir des enfants</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Présentation du partenaire -->
+        <section class="partner-presentation">
+            <div class="partner-logo">
+                <img src="/Users/amadoudiallo/Desktop/projet_humanitaire/kiminou icole pour tous-909799c8120548eaa4c6bf74d8290a3d.jpg" alt="Logo Kiminou">
+            </div>
+            <div class="partner-description">
+                <p>Kiminou est une association engagée pour l'éducation des enfants au Congo. Nous collaborons étroitement avec eux pour redistribuer des vêtements et soutenir la scolarisation.</p>
+                <a href="http://www.kiminou.fr" target="_blank" class="partner-link">
+                    <i class="fas fa-external-link-alt"></i> Découvrir le site officiel de Kiminou
+                </a>
+            </div>
+        </section>
+
+        <!-- Notre collaboration -->
+        <section class="collaboration-section">
+            <h2>Notre collaboration en action</h2>
+            <div class="collaboration-gallery">
+                <div class="gallery-item">
+                    <img src="/Users/amadoudiallo/Desktop/projet_humanitaire/photo_avec_kiminou_stock.jpeg" alt="Collecte de vêtements">
+                    <div class="gallery-caption">Collecte solidaire de vêtements pour les enfants</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="/Users/amadoudiallo/Desktop/projet_humanitaire/equipe_associ_kiminou.jpeg" alt="Stand à la Foire">
+                    <div class="gallery-caption">Notre stand commun à la Foire de Paris</div>
+                </div>
+            </div>
+            <div class="collaboration-impact">
+                <p>Grâce à ce partenariat, nous assurons une aide directe et efficace aux enfants bénéficiaires, notamment en fournissant des vêtements adaptés et en soutenant leur rentrée scolaire.</p>
+            </div>
+        </section>
+
+        <!-- Témoignage -->
+        <section class="testimonial-section">
+            <div class="testimonial-box">
+                <i class="fas fa-quote-left quote-icon"></i>
+                <blockquote>
+                    "La collaboration avec Human Impact nous permet d'étendre notre impact et d'aider encore plus d'enfants à accéder à l'éducation. C'est un partenariat basé sur des valeurs communes et une vision partagée."
+                </blockquote>
+                <cite>- Berthé LAVAL, Présidente de Kiminou</cite>
+            </div>
+        </section>
+
+        <!-- Appel à l'action -->
+        <section class="cta-section">
+            <h2>Rejoignez l'aventure</h2>
+            <p>Vous souhaitez soutenir notre action ou devenir partenaire ? Contactez-nous !</p>
+            <div class="cta-buttons">
+                <a href="#contact" class="btn btn-primary">Devenir partenaire</a>
+                <a href="https://www.kiminou.fr/don" target="_blank" class="btn btn-secondary">Faire un don</a>
+            </div>
+        </section>
+
+        <!-- Formulaire de contact -->
+        <section id="contact" class="contact-section">
+            <h2>Contactez-nous</h2>
+            <form class="contact-form">
+                <div class="form-group">
+                    <label for="name">Nom</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Envoyer</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Human Impact. Tous droits réservés.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 

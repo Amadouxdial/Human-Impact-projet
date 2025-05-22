@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Action 3 : Inventaire et organisation des stocks - Human Impact</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html">Human Impact</a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="actions.html" class="active">Actions</a></li>
+            <li><a href="partenaires.html">Partenaires</a></li>
+            <li><a href="temoignages.html">Témoignages</a></li>
+            <li><a href="galerie.html">Galerie</a></li>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <!-- Bannière d'introduction -->
+        <section class="action-banner">
+            <div class="banner-image" style="background-image: url('/Users/amadoudiallo/Desktop/projet_humanitaire/photo_couverture_action3.jpeg');">
+                <div class="banner-content">
+                    <h1>Optimiser l'aide, transformer des vies</h1>
+                    <p>Découvrez comment une logistique bien pensée fait toute la différence.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section principale -->
+        <section class="main-section">
+            <div class="two-columns">
+                <div class="left-column">
+                    <h2>Une logistique au service de l'éducation</h2>
+                    <p>L'efficacité des initiatives humanitaires repose sur une organisation logistique exemplaire. Dans cette optique, nous avons prêté main-forte à l'association Kiminou pour optimiser la gestion de leurs stocks. Cette mission était d'une importance cruciale, car elle concernait non seulement des vêtements, mais également d'autres articles essentiels à la scolarisation des enfants, tels que des fournitures scolaires, des sacs à dos, et même du matériel éducatif.</p>
+                    
+                    <h3>Notre contribution s'est déclinée en plusieurs étapes méthodiques :</h3>
+                    <ul class="contribution-steps">
+                        <li><strong>Tri des dons :</strong> Nous avons soigneusement catégorisé chaque article, qu'il s'agisse de vêtements, de fournitures scolaires ou de matériel éducatif.</li>
+                        <li><strong>Inventaire numérique :</strong> Tous les articles ont été enregistrés dans un système d'inventaire pour garantir une visibilité claire et une gestion simplifiée.</li>
+                        <li><strong>Réorganisation spatiale :</strong> En optimisant les espaces de stockage, nous avons permis une meilleure accessibilité aux ressources et une capacité accrue pour recevoir de nouveaux dons.</li>
+                    </ul>
+                    
+                    <p>En nous engageant dans cette tâche, nous avons veillé à ce que chaque article collecté puisse être redistribué rapidement et efficacement aux enfants et aux familles dans le besoin.</p>
+                </div>
+                <div class="right-column">
+                    <div class="image-gallery">
+                        <img src="Tri_des_dons.jpeg" alt="Tri des dons">
+                        <img src="Stock_range.jpeg" alt="Stock organisé">
+                        <img src="images/inventaire.jpg" alt="Système d'inventaire">
+                    </div>
+                    <div class="highlight-box">
+                        <p>"Chaque article trié et organisé contribue à offrir de meilleures chances pour une éducation de qualité."</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Objectifs -->
+        <section class="objectives-section">
+            <h2>Nos Objectifs</h2>
+            <div class="objectives-grid">
+                <div class="objective-card">
+                    <div class="objective-icon">📚</div>
+                    <h3>Soutenir l'éducation des enfants</h3>
+                    <p>Garantir que les fournitures scolaires et autres articles essentiels parviennent rapidement aux enfants.</p>
+                </div>
+                <div class="objective-card">
+                    <div class="objective-icon">⚡</div>
+                    <h3>Améliorer l'efficacité logistique</h3>
+                    <p>Réduire le temps nécessaire à la préparation et à la distribution des dons.</p>
+                </div>
+                <div class="objective-card">
+                    <div class="objective-icon">💪</div>
+                    <h3>Renforcer les capacités de Kiminou</h3>
+                    <p>Mettre en place des outils et des méthodes permettant une gestion pérenne des stocks.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Résultats -->
+        <section class="results-section">
+            <h2>Nos Résultats</h2>
+            <div class="results-grid">
+                <div class="result-card">
+                    <h3>Articles triés</h3>
+                    <p class="result-number">2000+</p>
+                    <p>incluant vêtements, fournitures scolaires et matériels divers</p>
+                </div>
+                <div class="result-card">
+                    <h3>Systèmes modernisés</h3>
+                    <p>Création de zones spécifiques pour les vêtements, les fournitures éducatives et le matériel logistique</p>
+                </div>
+                <div class="result-card">
+                    <h3>Bénéficiaires directs</h3>
+                    <p class="result-number">75</p>
+                    <p>enfants scolarisés et leurs familles</p>
+                </div>
+                <div class="result-card">
+                    <h3>Impact éducatif</h3>
+                    <p>Amélioration des conditions de scolarité grâce aux fournitures distribuées</p>
+                </div>
+                <div class="result-card">
+                    <h3>Efficacité améliorée</h3>
+                    <p class="result-number">40%</p>
+                    <p>de réduction du temps de traitement</p>
+                </div>
+            </div>
+
+            <div class="chart-section">
+                <div class="chart-container">
+                    <canvas id="distributionChart"></canvas>
+                </div>
+                <p class="chart-description">
+                    "Ces résultats montrent l'importance d'une logistique bien pensée dans l'aide humanitaire. Grâce à cette action, des enfants ont pu recevoir rapidement ce dont ils avaient besoin pour réussir à l'école."
+                </p>
+            </div>
+        </section>
+
+        <!-- Section Témoignages -->
+        <section class="testimonials-section">
+            <h2>Ce qu'ils disent</h2>
+            <div class="testimonial-box">
+                <blockquote>
+                    "Grâce à cette organisation, nos distributions sont devenues beaucoup plus efficaces. Cela nous permet de mieux servir les familles dans le besoin."
+                </blockquote>
+            </div>
+        </section>
+
+        <!-- Boutons de navigation -->
+        <div class="navigation-buttons">
+            <a href="actions.html" class="btn btn-primary">Retour aux Actions</a>
+            <a href="partenaires.html" class="btn btn-secondary">Découvrir notre Partenaire</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Human Impact. Tous droits réservés.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Configuration du graphique circulaire
+        document.addEventListener('DOMContentLoaded', function() {
+            const ctx = document.getElementById('distributionChart').getContext('2d');
+            new Chart(ctx, {
+                type: 'pie',
+                data: {
+                    labels: ['Vêtements', 'Fournitures scolaires', 'Matériels divers'],
+                    datasets: [{
+                        data: [45, 35, 20],
+                        backgroundColor: [
+                            '#3498db',
+                            '#e67e22',
+                            '#2ecc71'
+                        ]
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    plugins: {
+                        legend: {
+                            position: 'bottom'
+                        }
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html> 

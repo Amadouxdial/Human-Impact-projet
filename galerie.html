@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galerie - Human Impact</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html">Human Impact</a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="actions.html">Actions</a></li>
+            <li><a href="partenaires.html">Partenaires</a></li>
+            <li><a href="temoignages.html">Témoignages</a></li>
+            <li><a href="galerie.html" class="active">Galerie</a></li>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <h1 class="page-title">Galerie Média</h1>
+
+        <!-- Section Galerie -->
+        <section class="media-gallery">
+            <div class="gallery-filters">
+                <button class="filter-btn active" data-filter="all">Tout</button>
+                <button class="filter-btn" data-filter="image">Photos</button>
+                <button class="filter-btn" data-filter="video">Vidéos</button>
+            </div>
+            <div class="gallery-grid" id="galleryGrid">
+                <!-- Photo de l'équipe à la Foire de Paris -->
+                <div class="gallery-item" data-type="image">
+                    <a href="equipe_human_impact_foire.jpeg" data-lightbox="gallery" data-title="L'équipe de Human Impact à la Foire de Paris">
+                        <img src="equipe_human_impact_foire.jpeg" alt="L'équipe de Human Impact à la Foire de Paris" class="gallery-image">
+                    </a>
+                    <div class="gallery-caption">L'équipe de Human Impact à la Foire de Paris</div>
+                </div>
+
+                <!-- Photo de l'équipe avec l'association Kiminou -->
+                <div class="gallery-item" data-type="image">
+                    <a href="equipe_associ_kiminou.jpeg" data-lightbox="gallery" data-title="Équipe Human Impact avec l'association de Kiminou dans le stand à la Foire de Paris">
+                        <img src="equipe_associ_kiminou.jpeg" alt="Équipe Human Impact avec l'association de Kiminou" class="gallery-image">
+                    </a>
+                    <div class="gallery-caption">Équipe Human Impact avec l'association de Kiminou dans le stand à la Foire de Paris</div>
+                </div>
+
+                <!-- Vidéo de Nanigna TRAORÉ -->
+                <div class="gallery-item" data-type="video">
+                    <div class="video-container">
+                        <video src="Nanigna_vetement.mp4" class="gallery-video" controls muted playsinline>
+                            Votre navigateur ne supporte pas la lecture de vidéos.
+                        </video>
+                    </div>
+                    <div class="gallery-caption">Nanigna TRAORÉ, membre de Human Impact, en plein triage de vêtements collectés</div>
+                </div>
+
+                <!-- Photo d'Alain HISHEMA -->
+                <div class="gallery-item" data-type="image">
+                    <a href="Alain_habits_collecté.jpeg" data-lightbox="gallery" data-title="Alain HISHEMA, membre de Human Impact, avec les habits collectés">
+                        <img src="Alain_habits_collecté.jpeg" alt="Alain HISHEMA avec les habits collectés" class="gallery-image">
+                    </a>
+                    <div class="gallery-caption">Alain HISHEMA, membre de Human Impact, avec les habits collectés</div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Human Impact. Tous droits réservés.</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+    <script src="gallery.js"></script>
+</body>
+</html> 

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administration Galerie - Human Impact</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="admin-styles.css">
+</head>
+<body class="admin-page">
+    <nav class="admin-navbar">
+        <div class="logo">
+            <a href="index.html">Human Impact</a>
+        </div>
+        <div class="admin-nav-title">
+            Interface d'Administration
+        </div>
+        <div class="admin-nav-actions">
+            <a href="galerie.html" class="view-site-btn">Voir le site</a>
+            <button id="logoutBtn" class="logout-btn">Déconnexion</button>
+        </div>
+    </nav>
+
+    <main class="admin-content">
+        <div class="admin-header">
+            <h1>Gestion de la Galerie</h1>
+            <p>Ajoutez, modifiez ou supprimez des médias de la galerie</p>
+        </div>
+
+        <!-- Section Upload -->
+        <section class="upload-section">
+            <div class="upload-container">
+                <form id="uploadForm" class="upload-form">
+                    <div class="file-input-container">
+                        <input type="file" id="mediaInput" multiple accept="image/*,video/*" class="file-input">
+                        <label for="mediaInput" class="file-input-label">
+                            <i class="fas fa-cloud-upload-alt"></i>
+                            Choisir des fichiers
+                        </label>
+                    </div>
+                    <div class="upload-options">
+                        <div class="form-group">
+                            <label for="mediaCategory">Catégorie:</label>
+                            <select id="mediaCategory" required>
+                                <option value="">Sélectionner une catégorie</option>
+                                <option value="actions">Actions</option>
+                                <option value="evenements">Événements</option>
+                                <option value="equipe">Équipe</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="mediaDescription">Description:</label>
+                            <textarea id="mediaDescription" rows="3" placeholder="Décrivez le média..."></textarea>
+                        </div>
+                    </div>
+                    <div class="upload-preview" id="uploadPreview">
+                        <!-- Les aperçus des fichiers sélectionnés apparaîtront ici -->
+                    </div>
+                    <button type="submit" class="upload-button">
+                        <i class="fas fa-upload"></i>
+                        Publier les médias
+                    </button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Section Gestion des Médias -->
+        <section class="media-management">
+            <h2>Médias existants</h2>
+            <div class="media-filters">
+                <button class="filter-btn active" data-filter="all">Tout</button>
+                <button class="filter-btn" data-filter="image">Photos</button>
+                <button class="filter-btn" data-filter="video">Vidéos</button>
+            </div>
+            <div class="media-grid" id="mediaGrid">
+                <!-- Les médias existants seront chargés ici -->
+            </div>
+        </section>
+    </main>
+
+    <script src="https://kit.fontawesome.com/your-kit-code.js"></script>
+    <script src="admin-gallery.js"></script>
+</body>
+</html> 
