@@ -2063,4 +2063,26 @@ footer {
     border-radius: 50%;
     border: 2.5px solid #e67e22;
     background: #fff;
+}
+
+.thanks-section {
+    background: #f8f9fa;
+    border-left: 4px solid #e67e22;
+    border-radius: 8px;
+    padding: 2rem 2rem 1.5rem 2rem;
+    margin: 2rem 0 0 0;
+    box-shadow: 0 2px 8px rgba(230,126,34,0.07);
+    text-align: center;
+}
+
+.thanks-section h2 {
+    color: #e67e22;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.thanks-section p {
+    color: #34495e;
+    font-size: 1.1rem;
+    margin: 0;
 } 
