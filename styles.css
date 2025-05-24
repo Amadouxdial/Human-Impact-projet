@@ -2045,4 +2045,22 @@ footer {
 
 .team-list li {
     margin-bottom: 0.5rem;
+}
+
+.testimonial-photo {
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #3498db;
+    margin: 0 auto 1rem auto;
+    display: block;
+    box-shadow: 0 2px 8px rgba(52,152,219,0.10);
+}
+
+.testimonial-photo.id-photo {
+    object-position: center top;
+    border-radius: 50%;
+    border: 2.5px solid #e67e22;
+    background: #fff;
 } 
