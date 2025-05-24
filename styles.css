@@ -2085,4 +2085,13 @@ footer {
     color: #34495e;
     font-size: 1.1rem;
     margin: 0;
+}
+
+.navbar-logo {
+    height: 38px;
+    width: auto;
+    vertical-align: middle;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
 } 
